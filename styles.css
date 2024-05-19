@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: cadetblue;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    border-bottom: 6px solid black;
+    min-height: 75px;
+    min-width: 97vw;
+    display: flex;
+    position: fixed;
+    padding: 0 20px;
+    background: white;
+    font-size: 2em;
+}
+
+.logo {
+    max-width: 20vw;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 10vw;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+main {
+    padding-top: 100px;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+
+.email-section {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.email-section h1 {
+    font-size: 2.5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: cadetblue;
+    min-height: 2em;
+    width: fit-content;
+    font-weight: 800;
+    font-size: 1.6em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.email {
+    min-height: 2em;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.services {
+    margin: 0 10rem 50px 10rem; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; /* Align items vertically */
+    column-gap: 20px; /* Add space between grid columns */
+}
+
+.icon {
+    max-width: 5vw;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align description to the start */
+    margin-top: 30px;
+}
+.description h1{
+font-size: 2rem;
+}
+
+.description p {
+    margin: 0; /* Reset margin */
+    font-size: 1.2rem;
+}
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.video-container h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.packagebox{
+border: 2px solid black;
+width: 25%;
+}
+.classics{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.classics-container h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.classics-container ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.stickname{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: cadetblue;
+    border-bottom: 2px;
+}
+.btn {
+    padding: 0 20px;
+    margin: 20px 0;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    border: 2px black solid;
+    border-radius: 2px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(183, 195, 196);
+    text-align: end;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+footer ul{
+display: flex;
+justify-content: flex-end;
+column-gap: 10px;
+margin-right: 20px;
+margin-bottom: 10px;
+
+}
+footer ul li{
+    list-style-type: none;
+    color: black;
+}
+.footer-links{
+    text-decoration: none;
+}
+footer span{
+    margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .header {
+        font-size: 1.5em;
+    }
+    main {
+        width: 90%;
+    }
+    .email{
+        width:100%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .icon {
+        max-width: 10vw;
+        height: 5vw;
+    }
+    .description {
+        align-items: center;
+        text-align: center;
+    }
+    .packagebox {
+        width: 25%;
+    }
+    .btn{
+        width: 100%;
+    }
+    @media only screen and (max-width: 400px) {
+        /* Adjust styles for smaller screens */
+        .header {
+            font-size: 1.2em;
+        }
+        main {
+            width: 100%;
+        }
+        .email{
+            width:100%;
+        }
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        .icon {
+            max-width: 10vw;
+            height: 5vw;
+        }
+        .description {
+            align-items: center;
+            text-align: center;
+        }
+        .packagebox {
+            width: 33%;
+        }
+        .btn{
+            width: 100%;
+        }}
+    }

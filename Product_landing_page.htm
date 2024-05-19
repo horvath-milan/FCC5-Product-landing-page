@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="freeCodeCamp Certification project" />
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        </head>
+    <body>
+        <header id="header" class="header">
+            <div class="logo">
+                <img id="header-img" src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/681915/f88b5cc1731915b0addffad9d7e16f5d144aaf6d/original/screenshot-1.jpg/!!/b%3AW1sicmVzaXplIiw5NTBdLFsibWF4Il0sWyJ3ZSJdXQ%3D%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg" alt="Crann Drumsticks logo and slogen saying: simplicity makes passion">
+            </div>
+            <nav id="nav-bar" class="navbar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#Services">Services</a></li>
+                    <li><a class="nav-link" href="#Choosing_the_perfect_stick">Choosing the perfect stick</a></li>
+                    <li><a class="nav-link" href="#Classics-container">Classics</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="email-section" class="email-section">
+                <h1>Custom made drumsticks, for you.</h1>
+            <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+                <input class="email" id="email" name="email" type="email" placeholder="Enter your email" required />
+                <input id="submit" type="submit" action="https://www.freecodecamp.com/email-submit" value="GET STARTED" class="button" />
+            </form>
+        </section>
+        <div class="container">
+            <section id="Services" class="services">
+                <div class="grid">
+                    <div id="icon1" class="icon">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/006/692/665/small_2x/measuring-tape-icon-illustration-for-graphic-and-web-design-free-vector.jpg" alt="black icon showing a measuring tape">
+                    </div>
+                    <div class="description">
+                        <h1>Make your own</h1>
+                        <p>Design your own signature Drumsticks online. You choose the wood, the diameter, the head, the taper, and we even print your signature on it.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div id="icon2" class="icon">
+                        <img src="data:image/png;base64,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" alt="an icon showing a snare drum">
+                    </div>
+                    <div class="description">
+                        <h1>Choose from the classics</h1>
+                        <p>Pick up your favourite from a range of classic designs. Whatever your playing style is, you will find the perfect fit for you. </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div id="icon3" class="icon">
+                        <img src="https://t4.ftcdn.net/jpg/02/27/73/93/360_F_227739395_BhszneMcufcAe9DJEBTHFFxVJM1PR8RT.jpg" alt="an icon of a fast moving truck">
+                    </div>
+                    <div class="description">
+                        <h1>Worlwide shipping</h1>
+                        <p>Wherever you are, we ship to your door. It's worth to stock up now! Order over 240 euros and we deliver for free.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="video-container" id="Choosing_the_perfect_stick">
+            <h2>Choosing the perfect stick</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JemCbY6bblo?si=6EFd0RwneClgJcUX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    <section class="classics-container" id="Classics-container">
+        <h1>Favourite Classics</h1>
+        <div class="classics">
+        <div class="5A packagebox">
+            <div class="stickname">CRANN 5A</div>
+            <h2> €8.5</h2>
+            <ul>
+                <li>Length: 405mm</li>
+                <li>Diameter: 14.2mm</li>
+                <li>Streched head</li>
+                <li>Durable and concrete</li>
+            </ul>
+            <button class="btn">SELECT</button>
+        </div>
+        <div class="Fusion packagebox">
+            <div class="stickname">CRANN FUSION</div>
+            <h2> €8.5</h2>
+            <ul>
+                <li>Length: 410mm</li>
+                <li>Diameter: 14mm</li>
+                <li>Round head</li>
+                <li>Dynamic, all-round drumstick</li>
+            </ul>
+            <button class="btn">SELECT</button>
+        </div>
+            <div class="Rock packagebox">
+                <div class="stickname">CRANN ROCK</div>
+                <h2> €8.5</h2>
+                <ul>
+                    <li>Length: 415mm</li>
+                    <li>Diameter: 15.2mm</li>
+                    <li>Oval head</li>
+                    <li>Massive and loud</li>
+                </ul>
+                <button class="btn">SELECT</button>
+            </div>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <ul>
+          <li><a class="footer-links" href="#">Privacy</a></li>
+          <li><a class="footer-links" href="#">Terms</a></li>
+          <li><a class="footer-links" href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2024, Crann Drumstics</span>
+      </footer>
+        </main>
+    </body>     
+</html>
